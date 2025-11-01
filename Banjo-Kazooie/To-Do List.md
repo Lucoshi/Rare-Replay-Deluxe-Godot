@@ -1,55 +1,78 @@
-# Banjo-Kazooie in Godot – Implementation To-Do List
+## 1. Character & Controls
+- [ ] Replace the starter kit’s main character with Banjo-Kazooie models (or placeholders).
+- [ ] Extend the character controller:
+    - [ ] Walk
+    - [ ] run
+    - [ ] short jump
+    - [ ] crouch
+    - [ ] Combo moves and unlockable abilities:
+       - [ ] Talon Trot (Kazooie runs, faster movement).
+       - [ ] Flying (with feather collectibles).
+       - [ ] Beak Barge (forward charge attack).
+       - [ ] Claw Swipe (basic attack).
+       - [ ] Rat-a-tat Rap (jump attack).
+       - [ ] Roll Attack.
+       - [ ] Shock Spring Jump.
+       - [ ] Egg Firing (forward and rear).
+       - [ ] Wonderwing (invincible dash).
+       - [ ] Beak Barge
+       - [ ] Beak Bomb
+       - [ ] Beak Buster
+       - [ ] Climb
+       - [ ] Dive
+       - [ ] Feathery Flap
+       - [ ] Flap Flip
+       - [ ] Flight
+       - [ ] Forward Roll
+       - [ ] Long Jump
+       - [ ] Stilt Stride
+       - [ ] Turbo Talon Trot
 
-## 1. Project Setup
-- [ ] Create a new Godot project.
-- [ ] Set up 3D platformer starter assets (characters, environment).
-- [ ] Configure input mappings for movement, actions, and camera.
+## 2. Combat System
+- [ ] Add melee attack mechanics (animations, hit detection, damage).
+- [ ] Implement ranged attacks (egg shooting, projectiles).
+- [ ] Add special attacks (Wonderwing, beak barge).
+- [ ] Script enemy reactions to player attacks (knockback, defeat).
 
-## 2. Character Controller
-- [ ] Implement Banjo’s movement (walk, run, jump).
-- [ ] Implement Kazooie’s abilities (talon trot, flying, swimming).
-- [ ] Add animations for all movement types and transitions.
-- [ ] Design and script combo moves (e.g., beak barge, shock spring jump).
+## 3. Camera
+- [ ] Improve third-person camera behavior:
+    - [ ] Smoother follow.
+    - [ ] Collision avoidance.
+    - [ ] Manual rotation and snap controls.
 
-## 3. Camera System
-- [ ] Create a 3rd-person camera with smooth follow and collision avoidance.
-- [ ] Implement camera controls (rotation, zoom, snap to view).
+## 4. Collectibles & Progression
+- [ ] Add collectible items:
+    - [ ] Jiggies (main progression).
+    - [ ] Music notes.
+    - [ ] Honeycombs (health).
+    - [ ] Empty Honeycombs
+    - [ ] Red Feathers
+    - [ ] Eggs
+    - [ ] Gold Feathers
+    - [ ] Mumbo Tokens
+- [ ] Inventory and HUD for collectibles.
 
-## 4. Level Design
-- [ ] Build prototype levels that mimic Banjo-Kazooie worlds.
-- [ ] Set up collectibles (music notes, jiggies, honeycombs).
-- [ ] Place enemies and NPCs.
+## 5. Level Design
+- [ ] Recreate Banjo-Kazooie worlds.
+- [ ] Replace platforming challenges, puzzles, and secrets.
 
-## 5. Interaction System
-- [ ] Create dialogue and text box system for NPCs.
-- [ ] Implement item pickup and inventory management.
-- [ ] Script puzzle elements and triggers.
+## 6. Enemies & NPCs
+- [ ] Create simple enemy AI (patrol, chase, attack).
+- [ ] Script enemy attack patterns and weaknesses.
+- [ ] Add NPCs with dialogue interactions and quests.
 
-## 6. Enemy & NPC AI
-- [ ] Design basic enemy behavior (patrol, attack, chase).
-- [ ] Script boss fights and unique enemy mechanics.
-- [ ] Implement NPCs with dialogue and quest logic.
+## 7. Moves & Abilities System
+- [ ] Script unlockable moves (learned from NPC).
+- [ ] Add triggers for learning and tracking abilities.
 
-## 7. Audio & Music
-- [ ] Integrate sound effects for movement, actions, and environment.
-- [ ] Add background music and dynamic transitions.
-
-## 8. UI & HUD
-- [ ] Design HUD for health, collectibles, and moves.
-- [ ] Implement pause and options menu.
+## 8. Audio & UI
+- [ ] Integrate Banjo-Kazooie-style sound effects and music.
+- [ ] Design a themed UI/HUD.
 
 ## 9. Saving & Loading
-- [ ] Set up save system to track progress, collectibles, and unlocks.
-- [ ] Implement load and continue functionality.
+- [ ] Implement save/load system for player progress and collectibles.
 
-## 10. Polish & Optimization
-- [ ] Test and refine controls and physics.
-- [ ] Optimize assets and performance for target platforms.
-- [ ] Add visual effects and polish animations.
+## 10. Polish & Testing
+- [ ] Playtest and refine controls, camera, and level flow.
+- [ ] Optimize performance and polish visuals.
 
----
-
-**Tips:**
-- Reference the original Banjo-Kazooie for gameplay mechanics and level flow.
-- Use Godot’s node and scene system to organize assets and logic.
-- Modularize code for reusability (e.g., character abilities, collectibles).
